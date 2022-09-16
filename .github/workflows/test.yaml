@@ -1,0 +1,9 @@
+name: GitHub Action Demo
+ on: [ push ]
+ jobs:
+    Test: 
+     runs-on: windows-latest
+     steps:
+       - uses: actions/checkout@v2
+       - run: echo "The job was automatically triggered by a ${{github.event_name}}event."
+       - run: echo mot_Challenge.js
